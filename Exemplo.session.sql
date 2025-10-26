@@ -1,0 +1,9 @@
+CREATE TABLE Clientes (
+    ID INT PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    CPF VARCHAR(11) UNIQUE,
+    Email VARCHAR(100),
+    Telefone VARCHAR(20),
+    Endereco VARCHAR(200),
+    DataCadastro DATE DEFAULT CURRENT_DATE
+);
